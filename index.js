@@ -39,3 +39,6 @@ function PrevSlide(){
 }
 
 prevbtn.addEventListener('click', PrevSlide);
+
+// tilt js
+

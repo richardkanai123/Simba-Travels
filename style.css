@@ -290,9 +290,34 @@ ul a:hover{
 }
 
 .Services{
-    background: rgba(3, 75, 94, 0.692);
-
+    background: rgba(12, 144, 180, 0.822);
+    position: relative;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+    overflow: auto;
 }
+
+.Services .card{
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    width: 18rem;
+    border: solid 1px;
+    text-align: center;
+    height: 80%;
+    margin: 0.5rem;
+    backdrop-filter: blur(17px) saturate(65%);
+    -webkit-backdrop-filter: blur(17px) saturate(65%);
+    background-color: rgba(221, 225, 233, 0.322);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    cursor: pointer;
+}
+
 
 .Contact{
     background: rgba(4, 111, 138, 0.76);

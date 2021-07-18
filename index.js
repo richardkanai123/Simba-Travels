@@ -21,7 +21,7 @@ function NextSlide(){
 
 
 window.onload = NextSlide();
-setInterval(NextSlide, 3000);
+setInterval(NextSlide, 5000);
 nextbtn.addEventListener('click', NextSlide);
 
 
@@ -39,6 +39,3 @@ function PrevSlide(){
 }
 
 prevbtn.addEventListener('click', PrevSlide);
-
-// tilt js
-

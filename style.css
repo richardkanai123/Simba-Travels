@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.body{
+    height: 100vh;
+    margin: 2rem 2rem;
+    width: 100vw;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.Home{
+    width: 100%;
+    background: url(./park.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Home header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background: rgba(173, 177, 175, 0.26);
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    padding: 0 3rem 0 3rem;
+}
+
+header .logo{
+    width: 20%;
+    cursor: pointer;
+}
+
+header nav{
+    width: 30%;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+ul a{
+    text-decoration: none;
+    color: rgb(59, 36, 19);
+    font-size: 1.5rem;
+}
+
+ul a:hover{
+    color: skyblue;
+    text-decoration: underline solid 3px;
+}
+
+.logo img{
+    max-height: 3rem;
+    align-self: center;
+    font: 1.0rem 500;
+}
+
+
+
+.Home .Intro{
+    color: rgba(20, 4, 4, 0.973);
+    position: absolute;
+    top: 15vh;
+    width: 50%;
+    border-radius: 2rem 1rem;
+    background-color: rgba(223, 238, 223, 0.226);
+    margin-left: 1rem;
+    background-blend-mode: saturation(120%);
+    padding: 1rem;
+}
+
+.Intro h1{
+    font-size: 2.0rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.Intro h2, .Intro h3{
+    line-height: 1.3;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.Intro p{
+    line-height: 1.3;
+    font-size: 1.3rem;
+    font-weight: 400;   
+}
+
+.Intro button{
+    color: rgb(228, 17, 175);
+    background-color: rgba(3, 58, 71, 0.705);
+    font: 1.5rem bold;
+    outline: none;
+    cursor: pointer;
+    width: 7rem;
+    height: 3rem;
+    pointer-events: all;  
+    animation: btn001 5s 1s ease infinite;
+}
+
+@keyframes btn001 {
+    0%{
+        background-color: #2e2d2dcc;
+    }
+    25%{
+        background-color: rgba(187, 17, 17, 0.205);
+    }
+     50%{
+        background-color: rgb(20, 59, 2);
+    }
+    75%{
+        background-color: rgb(48, 1, 1);
+    }
+    100%{
+        background-color: rgb(20, 1, 1);
+    }
+}
+
+
+.Intro button:hover{
+    color: rgb(46, 160, 11);
+    background-color: rgb(223, 146, 197);
+}
+
+.partners{
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    height: 10vh;
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logohold{
+  height: 100%;
+  transition: ease;
+  animation: panimate 5s ease 1s  infinite ;
+}
+
+.logohold:hover{
+    animation-play-state: paused;
+}
+
+@keyframes panimate{
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(0.2rem);
+    }
+    50%{
+        transform: translateY(0.5rem);
+    }
+    70%{
+        transform: translateY(0.2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.logohold img{
+    height: 100%;
+}
+
+.Gallery{
+    background: rgba(228, 228, 228, 0.808);
+    align-items: center;
+    width: 100%;
+}
+
+
+.slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.slide i{
+    font-size: 2rem;
+    pointer-events: all;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    opacity: 0.7;
+    animation: ianimate 5s infinite;
+}
+
+
+@keyframes ianimate {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    20%{
+        transform: translateY(0.5rem);
+        opacity: 0.5;
+    }
+    40%{
+        transform: translateY(1rem);
+        opacity: 0.8;
+    }
+    60%{
+        transform: translateY(-1rem);
+        opacity: 0.5;
+    }
+    80%{
+        transform: translateY(-0.5rem);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide .bi-arrow-left-square-fill{
+    left: 15%;
+    align-self: center;
+}
+
+.slide .bi-arrow-right-square-fill{
+    right: 15%;
+}
+
+
+.slide i:hover{
+    color: turquoise;
+    opacity: 1;
+    animation-play-state: paused;
+}
+
+.slide .ImageHolder{
+    max-width:60%;
+    height: 80%;
+    position: absolute;
+    top: 15vh;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 0.1rem 0.1rem rgb(53, 52, 52);
+}
+
+.ImageHolder img{
+    align-self: center;
+    height: 100%;
+    align-self: center;
+    max-width: 100%;
+    display:none;
+    transition: ease all;
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+}
+
+.ImageHolder img.activeimg{
+    z-index: 3;
+    display: inline-block;
+}
+
+.Services{
+    background: rgba(3, 75, 94, 0.692);
+
+}
+
+.Contact{
+    background: rgba(4, 111, 138, 0.76);
+}

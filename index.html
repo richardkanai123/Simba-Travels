@@ -23,6 +23,10 @@
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="menu">
+            </div>
+
         </header>
 
 
@@ -144,12 +148,24 @@
 
     <div class="container Contact" id="Contact">
         <h4>Fill in this form to reach out or use any of our social media links</h4>
+        
         <form method="post" name="ContactForm">
             <Label for="Name">Name</Label>
             <input type="text" name="Name" id="Name" placeholder="Your Full Name" required>
-            
-           
+            <label for="Email">Email</label>
+            <input type="email" name="Email" id="Email" placeholder="abcdef@sgddg.com" required>
+            <label for="msg">Your Message</label>
+            <textarea name="mdg" id="msg" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+            <button>Send Message</button>
         </form>
+
+        <div class="social">
+            <h3>Here are links to our social media sites</h3>
+            <a href="http://" target="_blank"><i class="bi bi-facebook"> Simba_safarisFb</i></a>
+            <a href="http://" target="_blank"><i class="bi bi-twitter"></i> Simba_safarisTw</a>
+            <a href="http://" target="_blank"><i class="bi bi-linkedin"></i> Simba_safarisLi</a>
+            <a href="http://" target="_blank"><i class="bi bi-instagram"></i> Simba_safarisIg</a>
+        </div>
 
     </div>
         

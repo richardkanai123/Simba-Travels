@@ -39,3 +39,11 @@ function PrevSlide(){
 }
 
 prevbtn.addEventListener('click', PrevSlide);
+
+// menu manipulation
+const menubtn = document.querySelector('.menu');
+const nav = document.querySelector('nav');
+
+menubtn.addEventListener('click', ()=>{
+    nav.classList.toggle('open')
+});

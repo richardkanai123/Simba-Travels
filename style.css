@@ -735,7 +735,6 @@ ul a:hover{
     .menu{
         visibility: visible;
         z-index: 10;
-        /* background-color: aqua; */
         position: absolute;
         right: 5%;
     }
@@ -858,6 +857,7 @@ ul a:hover{
         position: absolute;
         bottom: 5%;
         width: 90%;
+        max-width: 99%;
         height: 5vh;
         align-self: center;
         display: flex;
@@ -866,6 +866,7 @@ ul a:hover{
     
     .logohold{
       height: 100%;
+      width: 99%;
       transition: ease;
       animation: panimate 10s ease 1s  infinite ;
     }
